@@ -2,36 +2,41 @@
 ## Running screenshots show
 
 - **Comparison of Confusion Matrices for Different Model Predictions on the Daqing Dataset**
+<div align="center">
   <img src="img/daqing/1D_CNN.png" width="200" />
   <img src="img/daqing/BILSTM.png" width="200" />
   <img src="img/daqing/XGBoost.png" width="200" />
   <img src="img/daqing/1D_Unet.png" width="200" />
   <img src="img/daqing/BIGRU.png" width="200" />
   <img src="img/daqing/LMAFNet.png" width="200" />
-
+</div>
 - **Comparison of Confusion Matrices for Different Model Predictions on the Xinjiang Dataset**
-
+<div align="center">
   <img src="img/xinjiang/1D_CNN.png" width="200" />
   <img src="img/xinjiang/BILSTM.png" width="200" />
   <img src="img/xinjiang/XGBoost.png" width="200" />
   <img src="img/xinjiang/1D_Unet.png" width="200" />
   <img src="img/xinjiang/BIGRU.png" width="200" />
   <img src="img/xinjiang/LMAFNet.png" width="200" />
-
+</div>
 
 
 - **Comparison of Confusion Matrices for Different Model Predictions on the Daqing Blind Well Dataset**
-
+<div align="center">
   <img src="img/blind/1D_CNN.png" width="200" />
   <img src="img/blind/BILSTM.png" width="200" />
   <img src="img/blind/XGBoost.png" width="200" />
   <img src="img/blind/1D_Unet.png" width="200" />
   <img src="img/blind/BIGRU.png" width="200" />
   <img src="img/blind/LMAFNet.png" width="200" />
+</div>
 
 - **Lithologic visualization**
 
+<div align="center">
   <img src="img/jiao11.jpeg" width="610" /><img src="img/ning228.jpeg" width="610" />
+</div>
+
 ***
 ## Paper Support
 - Original information: LMAFNet: Lightweight Multi-Scale Adaptive Fusion Network
@@ -58,6 +63,8 @@ Due to ongoing research projects, these data have undergone desensitization proc
 #### 1、**example_daqing.xls** is a part of logging data from Daqing dataset, with 466 lines of data.
 
 #### 2、**example_xinjiang.xls** is a part of the well logging data from a well in the tarim basin Northern area of Xinjiang, with 329 lines of data.
+
+
 
 
 #### 3、**main. py** is executed on two datasets. It performs lithology identification through a lightweight multi-scale adaptive fusion network.
