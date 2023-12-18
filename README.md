@@ -6,6 +6,8 @@
   <img src="img/daqing/1D_CNN.png" width="200" />
   <img src="img/daqing/BILSTM.png" width="200" />
   <img src="img/daqing/XGBoost.png" width="200" />
+</div>
+<div align="center">
   <img src="img/daqing/1D_Unet.png" width="200" />
   <img src="img/daqing/BIGRU.png" width="200" />
   <img src="img/daqing/LMAFNet.png" width="200" />
@@ -15,6 +17,8 @@
   <img src="img/xinjiang/1D_CNN.png" width="200" />
   <img src="img/xinjiang/BILSTM.png" width="200" />
   <img src="img/xinjiang/XGBoost.png" width="200" />
+</div>
+<div align="center">
   <img src="img/xinjiang/1D_Unet.png" width="200" />
   <img src="img/xinjiang/BIGRU.png" width="200" />
   <img src="img/xinjiang/LMAFNet.png" width="200" />
@@ -26,6 +30,8 @@
   <img src="img/blind/1D_CNN.png" width="200" />
   <img src="img/blind/BILSTM.png" width="200" />
   <img src="img/blind/XGBoost.png" width="200" />
+</div>
+<div align="center">
   <img src="img/blind/1D_Unet.png" width="200" />
   <img src="img/blind/BIGRU.png" width="200" />
   <img src="img/blind/LMAFNet.png" width="200" />
@@ -34,7 +40,8 @@
 - **Lithologic visualization**
 
 <div align="center">
-  <img src="img/jiao11.jpeg" width="610" /><img src="img/ning228.jpeg" width="610" />
+  <img src="img/jiao11.jpeg" width="610" />
+  <img src="img/ning228.jpeg" width="610" />
 </div>
 
 ***
