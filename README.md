@@ -66,7 +66,7 @@ The LMAFNet is primarily composed of three modules: a Data Multi-Scale Preproces
 - pickleshare == 0.7.5
 ***
 ## How to use the project
-Due to ongoing research projects, these data have undergone desensitization processing, and here is a part of them.
+Due to ongoing research projects, these data have been desensitized, and here is a part of them. The complete data will be uploaded subsequently.
 #### 1、**example_daqing.xls** is a part of logging data from Daqing dataset, with 466 lines of data.
 
 #### 2、**example_xinjiang.xls** is a part of the well logging data from a well in the tarim basin Northern area of Xinjiang, with 329 lines of data.

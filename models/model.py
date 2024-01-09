@@ -2,6 +2,10 @@ import torch.nn as nn
 import torch
 from senet import SEBlock
 import torch.nn.functional as F
+
+from util import parse_arguments
+
+
 class MultiScaleNetwork(nn.Module):
     def __init__(self,num_classes,features,dropout=0):
         super(MultiScaleNetwork, self).__init__()
@@ -51,13 +55,14 @@ class MultiScaleNetwork(nn.Module):
         x = self.feature_refinement_module(x)
         x = self.output_layer(x)
         return x
-
+args = parse_arguments()
+device = torch.device("cuda:0" if args.cuda else "cpu")
 class multi_FocalLoss(nn.Module):
     def __init__(self, num_classes, alpha_t=None):
         super(multi_FocalLoss, self).__init__()
         self.num_classes = num_classes
-        self.alpha_t = torch.tensor(alpha_t) if alpha_t else None
-        self.gamma = nn.Parameter(torch.zeros(num_classes), requires_grad=True)
+        self.alpha_t = torch.tensor(alpha_t).to(device) if alpha_t else None
+        self.gamma = nn.Parameter(torch.zeros(num_classes, device=device), requires_grad=True)
 
     def forward(self, outputs, targets):
         if self.alpha_t is None:

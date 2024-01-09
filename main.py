@@ -56,10 +56,10 @@ def main():
         accuracy, predicted = evaluate(model, x_test, y_test, device=device)
         path = save_path + 'y_pre/multi_input.txt'
         write_file(path,predicted)
-        precision = precision_score(y_test, predicted, average='macro')
-        recall = recall_score(y_test, predicted, average='macro')
-        f1 = f1_score(y_test, predicted, average='macro')
-        conf_matrix = get_confusion_matrix(y_test, predicted)
+        precision = precision_score(y_test.cpu(), predicted.cpu(), average='macro')
+        recall = recall_score(y_test.cpu(), predicted.cpu(), average='macro')
+        f1 = f1_score(y_test.cpu(), predicted.cpu(), average='macro')
+        conf_matrix = get_confusion_matrix(y_test.cpu(), predicted.cpu())
         print(f"Run {j + 1}, Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1}")
 if __name__ == '__main__':
     main()
